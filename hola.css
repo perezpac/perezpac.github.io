@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white ;
+    color:black;
+    line-height: 1.6;  
+}
+h1{
+   text-align: center;
+    background-color:#F5E8FC;
+   color:red;
+
+}
+
+heard{
+   background-color:#F5E8FC;
+   color:red;
+   padding:1rem  2rem;
+   display:flex;
+   flex-directio: column;
+   justify-content:center;
+   align-items:center;
+   position:static;
+   top:0;
+   left:0;
+   width:100%;
+   z-index:1000;
+   box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul{ 
+  list-style:none;
+  display:flex;
+  gap: 0.8rem;
+  margin:0.5rem 0 0 0;
+  padding:0;
+  justify-content:center;
+}
+
+nav ul li{
+   margin-left: 15px;
+}
+
+nav ul li a{
+   color:white;
+   text-decoration: none;
+   padding:12px 18px;
+   background-color:#9D1CE3;
+   border-radius: 25px;
+   transition: 0.5s;
+}
+
+nav ul li a:hover{
+   background-color: #8FFAE8;
+}
+
+.main-content{
+   max-width: 1100px;
+   margin: 20px auto;
+   padding: 20px;
+   margin-top:8rem;
+}
+
+.seccion-cuadro{
+   background-color:white;
+   padding:30px;
+   border-radius:20px;
+   margin-bottom:30px;
+   border:2px solid #8FBFFA;
+   box-shadow: 10px  10px  0px  #81c784;
+}
+
+h2{
+  color:#F54927;
+  margin-bottom: 20px;
+  border-bottom:30px;
+  display:inline-block;
+  text-align:center;
+}
+
+.grid-FOTOS{
+   display:grid;
+   grid-template-columns: repeat (auto-fit, minmax(200px, 1fr));
+   gap:20px;
+}
+
+.fotos-marco img{
+   width:70%;
+   max-width:500px;
+   height:auto;
+   border-radius:10px;
+   border:5px solid #f1f8e9;
+   transition: transform 0.3s ease;
+}
+
+.fotos-marco img:hover {
+   transform:scale(1.05);
+   border-color:#E7FEFA;
+}
+
+.reproductor-estilizado{
+   text-align:center;
+   background: #EBF7F7;
+   border-radius:15px;
+   overflow:hidden;
+   line-height:normal;
+   padding: 1rem;
+}
+.videos{
+   max-width:100%;
+}
+
+footer{
+   text-align:center;
+   padding:20px;
+   background-color:#F5E8FC;
+   color: black;
+}
+
+@media (max-width:768px){
+   header{
+     flex-direction: column;
+     width:100%;
+     padding:0.8rem 1rem;
+   }
+ nav ul{
+     margin-top: 5px;
+     flex-direction:column;
+     gap:0.5rem;
+   }
+ .seccion-cuadro{
+     box-shadow:5px 5px 0px #81c784;
+     margin:0 10px;
+   }
+}
